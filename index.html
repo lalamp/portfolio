@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="imagens/" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Larissa - Dev Full Stack</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="imagens/logo_branca.jpg" alt="" height="30" />
+      </div>
+
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section id="home" class="home-section">
+      <div class="home-container">
+        <div class="home-content">
+          <h1>Oi, sou <span class="gradient-text">Larissa.</span></h1>
+
+          <p>
+            Desenvolvedora Full Stack, formada em Ciência da Computação pela
+            Universidade de São Paulo (USP).
+          </p>
+
+          <!-- 
+          <div class="home-buttons">
+            <a href="#contato" class="btn btn-primary">
+              Entre em contato
+              <i class="fa-solid fa-chevron-right btn-icon"></i>
+            </a>
+            <a href="#sobre" class="btn btn-secondary">Saiba mais</a>
+          </div>
+          -->
+        </div>
+
+        <div class="home-imagem">
+          <!-- TODO: substituir pela imagem desejada -->
+          <div class="img-placeholder"></div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Arraste para mais</span>
+        <i class="fa-solid fa-chevron-down scroll-icon"></i>
+      </div>
+    </section>
+
+    <section id="sobre"></section>
+    <section id="experiencia"></section>
+
+    <section id="contato" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2>Vamos conversar?</h2>
+        </div>
+
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/lampereira/"
+            target="_blank"
+            class="contact-card"
+          >
+            <div class="icon-box">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-info">
+              <span>LinkedIn</span>
+              <strong>in/lampereira</strong>
+            </div>
+          </a>
+
+          <a href="mailto:lamagalhaespereira@gmail.com" class="contact-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <span>Email</span>
+              <strong>lamagalhaespereira@gmail.com</strong>
+            </div>
+          </a>
+
+          <a
+            href="https://wa.me/5531995621716"
+            target="_blank"
+            class="contact-card"
+          >
+            <div class="icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-info">
+              <span>Telefone</span>
+              <strong>+55 (31) 99562-1716</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Larissa M Pereira. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
