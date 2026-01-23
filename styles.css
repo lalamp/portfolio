@@ -48,7 +48,7 @@ h6 {
   letter-spacing: -0.02em;
 }
 
-/* --- HEADER --- */
+/* --- HEADER GERAL --- */
 header {
   display: flex;
   padding: 0 50px 0 20px;
@@ -66,32 +66,55 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.02);
 }
 
-nav {
+.logo {
+  /* Ajuste para garantir que a logo não quebre layout */
+  z-index: 1001;
+}
+
+/* Nav Desktop Padrão */
+.nav-menu {
   display: inline-flex;
   gap: 40px;
 }
 
-nav a {
+.nav-menu a {
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 14px;
   font-weight: 500;
   color: var(--text-secondary);
   font-size: var(--sz-small);
   transition: color 0.3s ease;
 }
 
-nav a.active {
+.nav-menu a.active {
   color: var(--text-primary);
 }
 
-nav a:hover {
+.nav-menu a:hover {
   cursor: pointer;
+  color: var(--text-primary);
 }
 
-.logo {
-  padding-right: 50px;
-  padding-left: 40px;
+/* Esconde o hambúrguer no Desktop */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001; /* Fica acima do menu aberto */
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--text-primary);
+  border-radius: 3px;
+}
+
+.nav-menu a i {
+  display: none;
 }
 
 /* --- BUTTONS --- */
@@ -202,16 +225,170 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.home-image {
+.home-animation-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: visible;
 }
 
-.home-image img {
-  width: 100%;
-  max-width: 400px;
-  max-height: 450px;
-  height: 450px;
+.main-icon {
+  font-size: 8rem;
+  color: var(--text-secondary);
+  filter: drop-shadow(0 0 20px rgba(94, 231, 231, 0.3))
+    drop-shadow(0 0 40px rgba(125, 95, 255, 0.2));
+  z-index: 10;
+}
+
+.floating-icon {
+  position: absolute;
+  color: var(--text-secondary);
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.icon-keyboard {
+  font-size: 2.5rem;
+  top: 15%;
+  left: 10%;
+  color: var(--accent-primary);
+  transform: rotate(-15deg);
+}
+
+.icon-mouse {
+  font-size: 2rem;
+  bottom: 20%;
+  left: 15%;
+  color: var(--accent-secondary);
+  transform: rotate(10deg);
+}
+
+.icon-code-1 {
+  font-size: 2rem;
+  top: 20%;
+  right: 15%;
+  color: var(--accent-primary);
+}
+
+.icon-code-2 {
+  font-size: 1.8rem;
+  bottom: 25%;
+  right: 10%;
+}
+
+.icon-flutter {
+  font-size: 2.2rem;
+  top: 10%;
+  right: 35%;
+  color: var(--accent-secondary);
+}
+
+.icon-bug {
+  font-size: 1.5rem;
+  bottom: 15%;
+  right: 35%;
+  color: var(--accent-secondary);
+  opacity: 0.5;
+}
+
+.icon-git {
+  font-size: 2rem;
+  top: 35%;
+  left: 5%;
+  opacity: 0.6;
+}
+
+.abstract-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  z-index: 1;
+  animation: pulse-glow 8s ease-in-out infinite alternate;
+}
+
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  background: var(--accent-primary);
+  top: 20%;
+  left: 20%;
+  animation-delay: -2s;
+}
+
+.shape-2 {
+  width: 250px;
+  height: 250px;
+  background: var(--accent-secondary);
+  bottom: 10%;
+  right: 10%;
+  animation-delay: -4s;
+}
+
+.shape-3 {
+  width: 150px;
+  height: 150px;
+  background: var(--accent-primary);
+  top: 60%;
+  left: 50%;
+  opacity: 0.2;
+}
+
+.floating-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.floating-medium {
+  animation: float-medium 5s ease-in-out infinite;
+}
+
+.floating-fast {
+  animation: float-fast 4s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@keyframes float-medium {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-15px) translateX(10px);
+  }
+}
+
+@keyframes float-fast {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
 }
 
 .scroll-indicator {
@@ -695,18 +872,71 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* --- HEADER --- */
-
-  nav {
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    gap: 30px;
+  .hamburger {
+    display: block;
   }
 
-  nav::-webkit-scrollbar {
-    display: none;
+  /* Transforma o hamburger em X quando ativo */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    /* Começa escondido na direita */
+    left: auto; /* Anula o left */
+    right: -100%;
+    top: 0;
+    color: var(--text-secondary);
+
+    /* Layout */
+    flex-direction: column;
+    background-color: rgba(10, 10, 18, 0.98); /* Fundo um pouco mais sólido */
+    backdrop-filter: blur(15px);
+    width: 100%; /* DICA: Mude para 80% se quiser ver o site no fundo (estilo gaveta) */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Alinha o texto à esquerda para o ícone ficar padronizado */
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Animação mais dinâmica */
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); /* Sombra na esquerda do menu */
+  }
+
+  /* Quando ativo, encosta na direita */
+  .nav-menu.active {
+    right: 0;
+  }
+
+  /* Estilo dos Links com Ícones */
+  .nav-menu a {
+    display: flex; /* Permite alinhar ícone e texto */
+    align-items: center;
+    gap: 20px; /* Espaço entre o ícone e o texto */
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-weight: 600;
+    width: 200px; /* Define uma largura para alinhar tudo no centro verticalmente */
+  }
+
+  /* Cor do ícone levemente diferente para destaque */
+  .nav-menu a i {
+    color: var(--text-secondary);
+    width: 30px; /* Garante que todos os ícones ocupem o mesmo espaço (alinhamento perfeito) */
+    text-align: center;
+    display: flex;
+  }
+
+  /* --- MANTENHA O RESTANTE DO CÓDIGO MOBILE AQUI --- */
+  .hamburger {
+    display: block;
+    color: var(--text-secondary);
   }
 
   /* --- HOME --- */
@@ -717,15 +947,87 @@ footer {
     justify-content: center;
     text-align: center;
     width: 100%;
+    gap: 10px; /* Reduzi o gap pois a animação já tem margem */
   }
 
   .home-content {
+    /* O texto fica na ordem natural (2), abaixo da animação */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
+  .home-animation {
+    order: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+
+  .home-animation-container {
+    height: 200px;
+    width: 100%;
+    transform: scale(0.85);
+  }
+
+  .shape-1 {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 10%;
+  }
+
+  .shape-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .shape-3 {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 40%;
+  }
+
+  .main-icon {
+    font-size: 6rem;
+  }
+  .icon-keyboard {
+    left: 2%;
+    top: 5%;
+  } /* Era 10% */
+  .icon-git {
+    left: -5%;
+    top: 40%;
+  } /* Era 5% */
+  .icon-mouse {
+    left: 8%;
+    bottom: 5%;
+  } /* Era 15% */
+  .icon-code-1 {
+    right: -5%;
+    top: 15%;
+  } /* Era 15% */
+  .icon-code-2 {
+    right: 10%;
+    bottom: 20%;
+  } /* Era 10% */
+  .icon-flutter {
+    right: 20%;
+    top: 5%;
+  } /* Era 35% */
+  .icon-bug {
+    right: 30%;
+    bottom: 0%;
+    opacity: 1;
+  } /* Era 35% */
+
+  /* --- TEXTOS GERAIS --- */
   .gradient-text {
     display: block;
     width: fit-content;
@@ -735,15 +1037,12 @@ footer {
   .home-content p {
     margin: 0 auto 15px auto;
     max-width: 90%;
-  }
-
-  .home-image {
-    display: none;
+    font-size: 0.95rem; /* Texto levemente menor para leitura mobile */
   }
 
   /* --- CONTACT --- */
   .contact-card {
-    width: 250px;
+    width: 280px; /* Largura fixa boa para mobile */
     align-items: flex-start;
   }
 
@@ -759,4 +1058,25 @@ footer {
     word-wrap: break-word;
     word-break: break-word;
   }
+}
+
+/* --- Smooth Scroll --- */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
