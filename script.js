@@ -1,4 +1,4 @@
-/* Navegação */
+/* --- NAVIGATION OBSERVER --- */
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
@@ -24,7 +24,26 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
-/* Scroll Indicator */
+/* --- SCROLL REVEAL ANIMATION --- */
+const scrollObserverOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.15,
+};
+
+const scrollObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, scrollObserverOptions);
+
+const animatedElements = document.querySelectorAll("[data-animate]");
+animatedElements.forEach((el) => scrollObserver.observe(el));
+
+/* --- SCROLL INDICATOR --- */
 const scrollIndicator = document.querySelector(".scroll-indicator");
 
 window.addEventListener("scroll", () => {
@@ -35,7 +54,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
-/* Smooth Scroll */
+/* --- LENIS SMOOTH SCROLL --- */
+const isMobile = window.innerWidth < 768;
+
 const lenis = new Lenis({
   duration: 1.5,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -62,8 +83,15 @@ document.querySelectorAll("nav a, .btn").forEach((anchor) => {
       const targetElem = document.querySelector(targetId);
 
       if (targetElem) {
+        if (isMobile) {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+
         lenis.scrollTo(targetElem, {
           offset: 0,
+          immediate: isMobile,
           duration: 1.5,
         });
       }
@@ -71,30 +99,32 @@ document.querySelectorAll("nav a, .btn").forEach((anchor) => {
   });
 });
 
-/* =========================================
-   MENU MOBILE (HAMBÚRGUER)
-   ========================================= */
+/* --- MOBILE MENU --- */
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const hamburgerIcon = document.querySelector(".hamburger i");
 
-// Abrir/Fechar menu ao clicar no ícone
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
+function toggleMenu() {
   navMenu.classList.toggle("active");
 
-  // Opcional: Travar o scroll do corpo quando menu estiver aberto
   if (navMenu.classList.contains("active")) {
+    hamburgerIcon.classList.remove("fa-bars");
+    hamburgerIcon.classList.add("fa-xmark");
     document.body.style.overflow = "hidden";
   } else {
+    hamburgerIcon.classList.add("fa-bars");
+    hamburgerIcon.classList.remove("fa-xmark");
     document.body.style.overflow = "auto";
   }
-});
+}
 
-// Fechar menu ao clicar em um link
+hamburger.addEventListener("click", toggleMenu);
+
 document.querySelectorAll(".nav-menu a").forEach((n) =>
   n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-    document.body.style.overflow = "auto"; // Destrava o scroll
+    hamburgerIcon.classList.add("fa-bars");
+    hamburgerIcon.classList.remove("fa-xmark");
+    document.body.style.overflow = "auto";
   }),
 );
