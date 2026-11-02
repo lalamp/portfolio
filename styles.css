@@ -615,9 +615,9 @@ button {
 
 .project-card {
   display: grid;
-  grid-template-columns: 4.5fr 7.5fr;
+  grid-template-columns: 4.8fr 7.2fr;
   gap: 28px;
-  align-items: stretch;
+  align-items: center;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -632,7 +632,8 @@ button {
 
 /* Moldura Visual de Apresentação Limpa */
 .project-preview-frame {
-  height: 100%;
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-md);
   background: #0f0b14;
   border: 1px solid rgba(244, 114, 182, 0.25);
@@ -684,31 +685,28 @@ button {
   border-radius: var(--radius-sm);
 }
 
-/* Preview Image para Projetos com Screenshots reais (ocupa toda a janela) */
+/* Preview Image para Projetos com Screenshots reais (sem cortes, 100% visível) */
 .preview-image-wrapper {
   position: relative;
   width: 100%;
-  flex: 1;
-  min-height: 200px;
   margin: 0;
   border-radius: 0;
   overflow: hidden;
   background: #09080c;
   border: none;
-  display: flex;
+  display: block;
 }
 
 .preview-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
+  object-fit: contain;
   transition: transform var(--transition-medium);
   display: block;
 }
 
 .project-card:hover .preview-image {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .preview-image-overlay {
@@ -1201,11 +1199,12 @@ footer {
 
   .project-preview-frame {
     padding: 0;
-    min-height: 220px;
+    min-height: unset;
+    height: auto;
   }
 
   .preview-image-wrapper {
-    height: 220px;
+    height: auto;
     margin: 0;
   }
 

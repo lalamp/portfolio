@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.showLess": "Recolher detalhes",
 
       // Experiência 1
-      "exp.job1.period": "01/02/2026 — Presente",
+      "exp.job1.period": "fev 2026 — Presente",
       "exp.job1.role": "Desenvolvedora de Software Júnior",
       "exp.job1.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
       "exp.job1.b1": "Desenvolvimento de um framework de UI e biblioteca de componentes interno em Flutter para padronizar o desenvolvimento frontend e reduzir retrabalho em múltiplos apps, construindo desde formulários e datagrids CRUD básicos até interfaces mestre-detalhe complexas.",
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job1.b5": "Integração de ferramentas com IA no fluxo diário de trabalho para acelerar a geração de código, auxiliar no debugging e refatoração e otimizar a eficiência geral de desenvolvimento.",
 
       // Experiência 2
-      "exp.job2.period": "14/10/2024 — 31/01/2026",
+      "exp.job2.period": "out 2024 — jan 2026",
       "exp.job2.role": "Estagiária em Desenvolvimento de Software",
       "exp.job2.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
       "exp.job2.b1": "Desenvolvimento full-stack de aplicações web e mobile utilizando Flutter, Go e MySQL.",
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job2.b4": "Participação no desenvolvimento de painel interno de suporte para gerenciamento de clientes, suas integrações, APIs e ambientes em nuvem.",
 
       // Experiência 3
-      "exp.job3.period": "15/12/2023 — 15/03/2024",
+      "exp.job3.period": "dez 2023 — mar 2024",
       "exp.job3.role": "Retail Assistant - Work and Travel",
       "exp.job3.company": "Vail Resorts • Stowe, Vermont - Estados Unidos",
       "exp.job3.b1": "Participação em programa de intercâmbio cultural e profissional em Stowe, Vermont, EUA.",
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job3.badge3": "Comunicação",
 
       // Experiência 4
-      "exp.job4.period": "01/01/2023 — 31/12/2023",
+      "exp.job4.period": "jan 2023 — dez 2023",
       "exp.job4.role": "Membro da Equipe de Marketing (Empresa Júnior USP)",
       "exp.job4.company": "Voll Jr • Ribeirão Preto, Brasil",
       "exp.job4.b1": "Criação e gestão de conteúdo digital para os perfis oficiais da empresa no Instagram e LinkedIn.",
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.showLess": "Hide details",
 
       // Experience 1 (verbatim from CV)
-      "exp.job1.period": "01/02/2026 — Current",
+      "exp.job1.period": "Feb 2026 — Present",
       "exp.job1.role": "Junior Software Developer",
       "exp.job1.company": "Hipcom ERP • São Paulo, Brazil (Remote)",
       "exp.job1.b1": "Developed an internal UI framework and component library in Flutter to standardize frontend development and reduce rework across multiple apps, building from basic CRUD forms and datagrids to complex master-detail interfaces.",
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job1.b5": "Integrate AI-powered tools into the daily workflow to accelerate code generation, assist with debugging and refactoring, and optimize overall development efficiency.",
 
       // Experience 2 (verbatim from CV)
-      "exp.job2.period": "14/10/2024 — 31/01/2026",
+      "exp.job2.period": "Oct 2024 — Jan 2026",
       "exp.job2.role": "Software Development Intern",
       "exp.job2.company": "Hipcom ERP • São Paulo, Brazil (Remote)",
       "exp.job2.b1": "Developed full-stack web and mobile applications using Flutter, Go and MySQL.",
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job2.b4": "Participated in developing an internal support panel to manage client integrations, APIs and cloud environments.",
 
       // Experience 3 (verbatim from CV)
-      "exp.job3.period": "15/12/2023 — 15/03/2024",
+      "exp.job3.period": "Dec 2023 — Mar 2024",
       "exp.job3.role": "Retail Assistant - Work and Travel",
       "exp.job3.company": "Vail Resorts • Stowe, Vermont - United States",
       "exp.job3.b1": "Participated in a cultural and professional exchange program in Stowe, Vermont, USA.",
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job3.badge3": "Communication",
 
       // Experience 4 (verbatim from CV)
-      "exp.job4.period": "01/01/2023 — 31/12/2023",
+      "exp.job4.period": "Jan 2023 — Dec 2023",
       "exp.job4.role": "Marketing Team Member (University Junior Enterprise)",
       "exp.job4.company": "Voll Jr • Ribeirão Preto, Brazil",
       "exp.job4.b1": "Created and managed digital content for the company's official Instagram and LinkedIn profiles.",
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.showLess": "Ocultar detalles",
 
       // Experiencia 1
-      "exp.job1.period": "01/02/2026 — Presente",
+      "exp.job1.period": "feb 2026 — Presente",
       "exp.job1.role": "Desarrolladora de Software Junior",
       "exp.job1.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
       "exp.job1.b1": "Desarrollo de framework interno de UI y librería de componentes en Flutter para estandarizar el frontend en múltiples aplicaciones.",
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job1.b5": "Integración de herramientas de IA en el flujo diario para optimizar generación de código, debugging y refactorización.",
 
       // Experiencia 2
-      "exp.job2.period": "14/10/2024 — 31/01/2026",
+      "exp.job2.period": "oct 2024 — ene 2026",
       "exp.job2.role": "Practicante en Desarrollo de Software",
       "exp.job2.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
       "exp.job2.b1": "Desarrollo full-stack de aplicaciones web y móviles utilizando Flutter, Go y MySQL.",
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job2.b4": "Participación en panel interno de soporte para gestión de integraciones y entornos en la nube.",
 
       // Experiencia 3
-      "exp.job3.period": "15/12/2023 — 15/03/2024",
+      "exp.job3.period": "dic 2023 — mar 2024",
       "exp.job3.role": "Retail Assistant - Work and Travel",
       "exp.job3.company": "Vail Resorts • Stowe, Vermont - Estados Unidos",
       "exp.job3.b1": "Programa de intercambio cultural y profesional en Stowe, Vermont, EE. UU.",
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job3.badge3": "Comunicación",
 
       // Experiencia 4
-      "exp.job4.period": "01/01/2023 — 31/12/2023",
+      "exp.job4.period": "ene 2023 — dic 2023",
       "exp.job4.role": "Miembro del Equipo de Marketing (Empresa Junior USP)",
       "exp.job4.company": "Voll Jr • Ribeirão Preto, Brasil",
       "exp.job4.b1": "Creación y gestión de contenidos digitales para perfiles oficiales de Instagram y LinkedIn.",
