@@ -1,402 +1,544 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Larissa M. Pereira</title>
+  <meta name="description" content="Portfólio de Larissa M. Pereira. Bacharel em Ciência da Computação pela USP e Desenvolvedora Full Stack na Hipcom ERP com foco em Go, Flutter e React." />
+  <meta name="author" content="Larissa Magalhães Pereira" />
+  <meta name="theme-color" content="#09080c" />
 
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Larissa M. Pereira — Desenvolvedora Full Stack" />
+  <meta property="og:description" content="Desenvolvimento de software de ponta a ponta: backend em Go, web em React, mobile e bibliotecas de componentes em Flutter, pipelines de CI/CD." />
+  <meta property="og:type" content="website" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png?v=2" />
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=2" />
+  <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/png" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- FontAwesome & Devicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
-    <title>Larissa - Dev Full Stack</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-left">
-        <div class="logo">
-          <img src="imagens/logo.png" alt="Logo" height="30" />
-        </div>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=36" />
+</head>
+<body>
 
-        <div class="language-picker desktop-only">
-          <button data-lang="pt" class="lang-btn active">
-            <img src="https://flagcdn.com/br.svg" alt="Português" />
-          </button>
-          <button data-lang="en" class="lang-btn">
-            <img src="https://flagcdn.com/us.svg" alt="English" />
-          </button>
-          <button data-lang="es" class="lang-btn">
-            <img src="https://flagcdn.com/es.svg" alt="Español" />
-          </button>
+  <!-- Iluminação Ambiente Estática de Fundo -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+
+  <!-- Menu Pill Flutuante Centralizado -->
+  <div class="pill-nav-container">
+    <header class="pill-nav" role="navigation" aria-label="Navegação Principal">
+      
+      <!-- Monograma Avatar -->
+      <a href="#home" class="pill-avatar" aria-label="Ir para o início">
+        LP
+      </a>
+
+      <!-- Links das Seções -->
+      <ul class="pill-links">
+        <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+        <li><a href="#education" data-i18n="nav.edu">Educação</a></li>
+        <li><a href="#technologies" data-i18n="nav.tech">Tecnologias</a></li>
+        <li><a href="#experience" data-i18n="nav.exp">Profissional</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+
+      <!-- Seletor de Idioma (Desktop) -->
+      <div class="pill-lang" role="group" aria-label="Seletor de Idioma">
+        <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+      </div>
+
+      <!-- Botão Trigger Mobile para Menu Popover -->
+      <button class="pill-menu-trigger" aria-label="Menu de navegação" aria-expanded="false" aria-controls="mobile-popover-menu">
+        <i class="fa-solid fa-bars menu-icon-bars"></i>
+        <i class="fa-solid fa-xmark menu-icon-close"></i>
+      </button>
+
+      <!-- Popover Menu Mobile -->
+      <div id="mobile-popover-menu" class="pill-popover-menu" role="menu" aria-hidden="true">
+        <ul class="popover-links">
+          <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#education" data-i18n="nav.edu">Educação</a></li>
+          <li><a href="#technologies" data-i18n="nav.tech">Tecnologias</a></li>
+          <li><a href="#experience" data-i18n="nav.exp">Profissional</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+        </ul>
+
+        <div class="popover-divider"></div>
+
+        <div class="popover-lang" role="group" aria-label="Seletor de Idioma Mobile">
+          <div class="popover-lang-buttons">
+            <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+            <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+          </div>
         </div>
       </div>
 
-      <nav class="nav-menu">
-        <div class="language-picker mobile-only">
-          <button data-lang="pt" class="lang-btn active">
-            <img src="https://flagcdn.com/br.svg" alt="Português" />
-          </button>
-          <button data-lang="en" class="lang-btn">
-            <img src="https://flagcdn.com/us.svg" alt="English" />
-          </button>
-          <button data-lang="es" class="lang-btn">
-            <img src="https://flagcdn.com/es.svg" alt="Español" />
-          </button>
-        </div>
-
-        <a href="#home" class="active">
-          <i class="fa-solid fa-house"></i>
-          <span data-i18n="nav.home">Home</span>
-        </a>
-        <a href="#technologies">
-          <i class="fa-solid fa-laptop-code"></i>
-          <span data-i18n="nav.tech">Tecnologias</span>
-        </a>
-        <a href="#experience">
-          <i class="fa-solid fa-briefcase"></i>
-          <span data-i18n="nav.exp">Experiência</span>
-        </a>
-        <a href="#contact">
-          <i class="fa-solid fa-envelope"></i>
-          <span data-i18n="nav.contact">Contato</span>
-        </a>
-      </nav>
-
-      <div class="hamburger">
-        <i class="fa-solid fa-bars"></i>
-      </div>
     </header>
+  </div>
 
-    <section id="home" class="home-section">
-      <div class="home-container">
-        <div class="home-content">
-          <h1>
-            <span data-i18n="home.hello">Olá, sou</span>
-            <span class="gradient-text">Larissa.</span>
-          </h1>
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
 
-          <p data-i18n="home.p1">
-            Desenvolvedora Full Stack, formada em Ciência da Computação pela
-            Universidade de São Paulo (USP).
-          </p>
-          <p data-i18n="home.p2">
-            Atualmente, transito entre a criatividade do Frontend e a lógica
-            robusta do Backend. Meu objetivo é criar aplicações performáticas,
-            escaláveis e com excelente experiência de usuário.
-          </p>
-        </div>
+    <!-- SEÇÃO 1: HOME -->
+    <section id="home" class="section-home reveal">
+      <h1 class="hero-title">
+        <span data-i18n="hero.greeting">Olá, sou</span>
+        <span class="text-gradient">Larissa.</span>
+      </h1>
 
-        <div class="home-animation" data-animate="fade-right">
-          <div class="home-animation-container">
-            <div class="abstract-shape shape-1"></div>
-            <div class="abstract-shape shape-2"></div>
-            <div class="abstract-shape shape-3"></div>
-            <div class="main-icon floating-slow">
-              <i class="fa-solid fa-laptop-code"></i>
-            </div>
-            <div class="floating-icon icon-keyboard floating-medium">
-              <i class="fa-regular fa-keyboard"></i>
-            </div>
-            <div class="floating-icon icon-mouse floating-fast">
-              <i class="fa-solid fa-computer-mouse"></i>
-            </div>
-            <div
-              class="floating-icon icon-code-1 floating-slow"
-              style="animation-delay: -1s"
-            >
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <div
-              class="floating-icon icon-code-2 floating-medium"
-              style="animation-delay: -2.5s"
-            >
-              <i class="fa-solid fa-terminal"></i>
-            </div>
-            <div
-              class="floating-icon icon-flutter floating-slow"
-              style="animation-delay: -1.5s"
-            >
-              <i class="devicon-flutter-plain"></i>
-            </div>
-            <div
-              class="floating-icon icon-bug floating-fast"
-              style="animation-delay: -0.5s"
-            >
-              <i class="fa-solid fa-bug"></i>
-            </div>
-            <div
-              class="floating-icon icon-git floating-medium"
-              style="animation-delay: -3s"
-            >
-              <i class="fa-brands fa-git-alt"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="hero-bio" data-i18n="hero.bio">
+        Desenvolvedora full stack com sólida vivência em Flutter, React e Go, construindo tanto sistemas web quanto aplicativos mobile. Tenho forte interesse na construção de soluções completas, unindo interfaces atraentes com foco em UI/UX e backends eficientes e de alta performance. Integro ferramentas de IA no dia a dia para otimizar meu fluxo de trabalho e me adapto com facilidade a novas linguagens e stacks tecnológicas.
+      </p>
 
-      <div class="scroll-indicator">
-        <span data-i18n="home.scroll">Arraste para mais</span>
-        <i class="fa-solid fa-chevron-down scroll-icon"></i>
-      </div>
-    </section>
+      <p class="hero-credentials" data-i18n="hero.credentials">
+        Formada em Ciência da Computação pela Universidade de São Paulo (USP), sou fluente em inglês e sigo aprimorando meu espanhol.
+      </p>
 
-    <section id="technologies" class="tech-section">
-      <div class="tech-container">
-        <div class="tech-title">
-          <h2 data-i18n="tech.title">Tecnologias</h2>
-          <p data-i18n="tech.desc">
-            Linguagens e ferramentas com as quais tenho experiência e
-            conhecimento técnico para desenvolver soluções. <br />
-            Explore meu GitHub para visualizar meus projetos.
-          </p>
-          <a
-            href="https://github.com/lalamp"
-            target="_blank"
-            class="btn btn-secondary"
-          >
-            <i class="devicon-github-plain white"></i>
-            GitHub
-          </a>
-        </div>
-
-        <div class="tech-categories">
-          <div class="tech-category">
-            <h4><i class="fa-solid fa-code"></i> Frontend</h4>
-            <div class="scrolling-wrapper">
-              <div class="tech-items">
-                <i
-                  class="devicon-flutter-plain colored"
-                  data-tooltip="Flutter"
-                ></i>
-                <i class="devicon-dart-plain colored" data-tooltip="Dart"></i>
-                <i
-                  class="devicon-react-original colored"
-                  data-tooltip="React"
-                ></i>
-                <i class="devicon-html5-plain colored" data-tooltip="HTML5"></i>
-                <i class="devicon-css3-plain colored" data-tooltip="CSS3"></i>
-                <i
-                  class="devicon-javascript-plain colored"
-                  data-tooltip="JavaScript"
-                ></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="tech-category">
-            <h4><i class="fa-solid fa-server"></i> Backend</h4>
-            <div class="scrolling-wrapper">
-              <div class="tech-items">
-                <i
-                  class="devicon-go-original-wordmark colored"
-                  data-tooltip="Go"
-                ></i>
-                <i class="devicon-java-plain colored" data-tooltip="Java"></i>
-                <i
-                  class="devicon-python-plain colored"
-                  data-tooltip="Python"
-                ></i>
-                <i class="devicon-c-plain colored" data-tooltip="C"></i>
-                <i
-                  class="devicon-cplusplus-plain colored"
-                  data-tooltip="C++"
-                ></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="tech-category">
-            <h4>
-              <i class="fa-solid fa-database"></i>
-              <span data-i18n="tech.data">Dados & Tools</span>
-            </h4>
-            <div class="scrolling-wrapper">
-              <div class="tech-items">
-                <i class="devicon-git-plain colored" data-tooltip="Git"></i>
-                <i
-                  class="devicon-mysql-original colored"
-                  data-tooltip="MySQL"
-                ></i>
-                <i
-                  class="devicon-postgresql-plain colored"
-                  data-tooltip="PostgreSQL"
-                ></i>
-                <i
-                  class="devicon-sqlite-plain colored"
-                  data-tooltip="SQLite"
-                ></i>
-                <i class="devicon-s3-plain colored" data-tooltip="S3"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="experience-section">
-      <div class="experience-container">
-        <div class="experience-header">
-          <h2 data-i18n="exp.title">Experiência</h2>
-          <p data-i18n="exp.desc">
-            Uma visão geral da minha jornada profissional e das habilidades que
-            adquiri ao longo do caminho.
-          </p>
-        </div>
-
-        <a href="docs/curriculo.pdf" target="_blank" class="btn btn-primary">
+      <div class="hero-actions">
+        <a href="docs/curriculo.pdf?v=2" target="_blank" class="btn-primary">
           <i class="fa-solid fa-file-arrow-down"></i>
-          <span data-i18n="exp.resume">Currículo</span>
+          <span data-i18n="hero.resume">Currículo (PDF)</span>
         </a>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date" data-i18n="exp.date1">
-              Dez 2023 - Mar 2024
-            </div>
-            <div class="timeline-card">
-              <h4 data-i18n="exp.job1">Intercâmbio</h4>
-              <h5 data-i18n="exp.company1">
-                Experiência Internacional - Stowe, EUA
-              </h5>
-              <p data-i18n="exp.desc1">
-                Experiência de trabalho nos EUA, aprimorando a proficiência no
-                inglês, a habilidade de relacionamento com clientes e a
-                adaptação cultural.
-              </p>
-              <div class="tech-badges">
-                <span data-i18n="exp.badge1">Inglês Avançado</span>
-                <span data-i18n="exp.badge2">Comunicação</span>
-              </div>
-            </div>
-          </div>
+        <a href="https://github.com/lalamp" target="_blank" class="btn-secondary">
+          <i class="devicon-github-plain"></i>
+          <span>GitHub</span>
+        </a>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date" data-i18n="exp.date2">
-              Out 2024 - Jan 2026
-            </div>
-            <div class="timeline-card">
-              <h4 data-i18n="exp.job2">
-                Estágio em Desenvolvimento de Software
-              </h4>
-              <h5>Hipcom ERP</h5>
-              <p data-i18n="exp.desc2">
-                Desenvolvimento de soluções ERP para o varejo, atuando no
-                Frontend e Backend, desde a criação de novas funcionalidades até
-                a manutenção e otimização do sistema.
-              </p>
-              <div class="tech-badges">
-                <span>Flutter</span>
-                <span>Dart</span>
-                <span>Go</span>
-                <span>MySQL</span>
-                <span>SQLite</span>
-              </div>
-            </div>
-          </div>
+        <a href="https://linkedin.com/in/lampereira" target="_blank" class="btn-secondary">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
 
-          <div class="timeline-item">
-            <div class="timeline-dot highlight"></div>
-            <div class="timeline-date highlight" data-i18n="exp.date3">
-              Jan 2026 - Presente
-            </div>
-            <div class="timeline-card active-card">
-              <h4 data-i18n="exp.job3">Desenvolvedora de Software Júnior</h4>
-              <h5>Hipcom ERP</h5>
-              <p data-i18n="exp.desc3">
-                Desenvolvimento full-stack de sistemas de gestão voltados para o
-                varejo.
-              </p>
-              <div class="tech-badges">
-                <span>Flutter</span>
-                <span>Dart</span>
-                <span>Go</span>
-                <span>MySQL</span>
-              </div>
-            </div>
+        <a href="#contact" class="btn-link">
+          <span data-i18n="hero.contact">Contato</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: EDUCAÇÃO / FORMAÇÃO ACADÊMICA & IDIOMAS -->
+    <section id="education" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="edu.title">Educação</h2>
+        <p class="section-desc" data-i18n="edu.desc">
+          Base acadêmica e proficiência em idiomas:
+        </p>
+      </div>
+
+      <div class="education-list">
+        <!-- Card 1: Graduação USP -->
+        <div class="experience-card">
+          <div class="experience-top-row">
+            <h3 class="experience-role" data-i18n="edu.degree">Bacharelado em Ciência da Computação</h3>
+            <span class="experience-period" data-i18n="edu.period">2022 - 2025</span>
+          </div>
+          <div class="experience-company" data-i18n="edu.inst" style="margin-bottom: 0;">Universidade de São Paulo (USP) • FFCLRP • Ribeirão Preto, Brasil</div>
+        </div>
+
+        <!-- Card 2: Idiomas -->
+        <div class="experience-card">
+          <div class="experience-top-row">
+            <h3 class="experience-role" data-i18n="edu.lang.title">Idiomas</h3>
+          </div>
+          <div class="experience-skills" style="margin-top: 4px;">
+            <span class="experience-badge" data-i18n="edu.lang.pt">Português (Nativo)</span>
+            <span class="experience-badge" data-i18n="edu.lang.en">Inglês (Avançado • C1)</span>
+            <span class="experience-badge" data-i18n="edu.lang.es">Espanhol (Iniciante)</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact-section">
-      <div class="contact-container">
-        <div class="contact-header">
-          <h2 data-i18n="contact.title">Vamos conversar?</h2>
-          <p data-i18n="contact.desc">Aberta a novos projetos e conexões.</p>
+    <!-- SEÇÃO 2: TECNOLOGIAS -->
+    <section id="technologies" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="tech.title">Tecnologias</h2>
+        <p class="section-desc" data-i18n="tech.desc">
+          Linguagens, frameworks e ferramentas que utilizo no desenvolvimento de software:
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <!-- 1. Linguagens e Frameworks -->
+        <div class="tech-card reveal delay-1">
+          <div class="tech-category-title">
+            <i class="fa-solid fa-code"></i>
+            <span data-i18n="tech.cat1">Linguagens e Frameworks</span>
+          </div>
+          <div class="tech-badges-list">
+            <span class="tech-badge"><i class="devicon-flutter-plain colored"></i> Flutter</span>
+            <span class="tech-badge"><i class="devicon-dart-plain colored"></i> Dart</span>
+            <span class="tech-badge"><i class="devicon-react-original colored"></i> React</span>
+            <span class="tech-badge"><i class="devicon-fastify-plain" style="color: #ffffff;"></i> Fastify</span>
+            <span class="tech-badge"><i class="devicon-nextjs-plain" style="color: #ffffff;"></i> Next.js</span>
+            <span class="tech-badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            <span class="tech-badge"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+            <span class="tech-badge"><i class="devicon-go-original-wordmark colored"></i> Go</span>
+            <span class="tech-badge"><i class="devicon-java-plain colored"></i> Java</span>
+            <span class="tech-badge"><i class="devicon-c-plain colored"></i> C</span>
+            <span class="tech-badge"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+          </div>
         </div>
 
-        <div class="contact-links">
-          <a
-            href="https://www.linkedin.com/in/lampereira/"
-            target="_blank"
-            class="contact-card"
-          >
-            <div class="icon-box">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-            <div class="contact-info">
-              <span>LinkedIn</span>
-              <strong>in/lampereira</strong>
-            </div>
-          </a>
-
-          <a href="mailto:lamagalhaespereira@gmail.com" class="contact-card">
-            <div class="icon-box">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-info">
-              <span>Email</span>
-              <strong>lamagalhaespereira@gmail.com</strong>
-            </div>
-          </a>
-
-          <a
-            href="https://wa.me/5531995621716"
-            target="_blank"
-            class="contact-card"
-          >
-            <div class="icon-box">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="contact-info">
-              <span data-i18n="contact.phone">Telefone</span>
-              <strong>+55 (31) 99562-1716</strong>
-            </div>
-          </a>
+        <!-- 2. Dados e tools -->
+        <div class="tech-card reveal delay-2">
+          <div class="tech-category-title">
+            <i class="fa-solid fa-database"></i>
+            <span data-i18n="tech.cat2">Dados e tools</span>
+          </div>
+          <div class="tech-badges-list">
+            <span class="tech-badge"><i class="devicon-mysql-original colored"></i> MySQL</span>
+            <span class="tech-badge"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+            <span class="tech-badge"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+            <span class="tech-badge"><i class="fa-solid fa-arrows-spin" style="color: #f472b6;"></i> CI/CD</span>
+            <span class="tech-badge"><i class="devicon-docker-plain colored"></i> Docker</span>
+            <span class="tech-badge"><i class="devicon-git-plain colored"></i> Git</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <p>
-        &copy; 2026 Larissa M Pereira.
-        <span data-i18n="footer.rights">All rights reserved.</span>
-      </p>
-    </footer>
+    <!-- SEÇÃO 3: EXPERIÊNCIA PROFISSIONAL (EM TÓPICOS FIÉIS AO CV) -->
+    <section id="experience" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="exp.title">Experiência Profissional</h2>
+        <p class="section-desc" data-i18n="exp.desc">
+          Trajetória profissional:
+        </p>
+      </div>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="experience-list">
+        
+        <!-- Experiência 1: Hipcom ERP Júnior -->
+        <div class="experience-card reveal delay-1">
+          <div class="experience-top-row">
+            <h3 class="experience-role" data-i18n="exp.job1.role">Desenvolvedora de Software Júnior</h3>
+            <span class="experience-period" data-i18n="exp.job1.period">01/02/2026 — Presente</span>
+          </div>
+          <div class="experience-company" data-i18n="exp.job1.company">Hipcom ERP • São Paulo, Brasil (remoto)</div>
+
+          <div class="experience-skills">
+            <span class="experience-badge">Flutter</span>
+            <span class="experience-badge">React</span>
+            <span class="experience-badge">Go</span>
+            <span class="experience-badge">MySQL</span>
+            <span class="experience-badge">SQLite</span>
+            <span class="experience-badge">CI/CD</span>
+            <span class="experience-badge">CircleCI</span>
+            <span class="experience-badge">Codemagic</span>
+            <span class="experience-badge">Firebase</span>
+            <span class="experience-badge">Nomad</span>
+            <span class="experience-badge">Apple App Store</span>
+            <span class="experience-badge">Google Play Store</span>
+          </div>
+
+          <div class="experience-details">
+            <div class="experience-details-inner">
+              <ul class="experience-bullets">
+                <li data-i18n="exp.job1.b1">Desenvolvimento de um framework de UI e biblioteca de componentes interno em Flutter para padronizar o desenvolvimento frontend e reduzir retrabalho em múltiplos apps, construindo desde formulários e datagrids CRUD básicos até interfaces mestre-detalhe complexas.</li>
+                <li data-i18n="exp.job1.b2">Construção de um sistema web de controle de produção para clientes do varejo utilizando React, Go e MySQL, gerenciando fluxos de receitas, preparação, embalagem, transferências de estoque e controle de inventário.</li>
+                <li data-i18n="exp.job1.b3">Manutenção e expansão de aplicativos mobile existentes (Android/iOS) em Flutter/Go e sistemas ERP de varejo na web em React/Go, solucionando chamados de suporte, corrigindo bugs e implementando novas funcionalidades.</li>
+                <li data-i18n="exp.job1.b4">Gestão de pipelines de CI/CD e deploys de aplicações em diversos ambientes utilizando CircleCI, Codemagic, Firebase, Nomad, Apple App Store e Google Play Store.</li>
+                <li data-i18n="exp.job1.b5">Integração de ferramentas com IA no fluxo diário de trabalho para acelerar a geração de código, auxiliar no debugging e refatoração e otimizar a eficiência geral de desenvolvimento.</li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="experience-toggle-btn" type="button" aria-expanded="false">
+            <span class="toggle-text" data-i18n="exp.showMore">Ver detalhes</span>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </button>
+        </div>
+
+        <!-- Experiência 2: Hipcom ERP Estágio -->
+        <div class="experience-card reveal delay-2">
+          <div class="experience-top-row">
+            <h3 class="experience-role" data-i18n="exp.job2.role">Estagiária em Desenvolvimento de Software</h3>
+            <span class="experience-period" data-i18n="exp.job2.period">14/10/2024 — 31/01/2026</span>
+          </div>
+          <div class="experience-company" data-i18n="exp.job2.company">Hipcom ERP • São Paulo, Brasil (remoto)</div>
+
+          <div class="experience-skills">
+            <span class="experience-badge">Flutter</span>
+            <span class="experience-badge">Dart</span>
+            <span class="experience-badge">Go</span>
+            <span class="experience-badge">Java</span>
+            <span class="experience-badge">MySQL</span>
+          </div>
+
+          <div class="experience-details">
+            <div class="experience-details-inner">
+              <ul class="experience-bullets">
+                <li data-i18n="exp.job2.b1">Desenvolvimento full-stack de aplicações web e mobile utilizando Flutter, Go e MySQL.</li>
+                <li data-i18n="exp.job2.b2">Desenvolvimento e otimização de novas APIs e endpoints, além da migração e refatoração de sistemas backend de Java para Go.</li>
+                <li data-i18n="exp.job2.b3">Contribuição no desenvolvimento de módulos centrais para sistema ERP de varejo, incluindo controle de estoque, processamento de pedidos, módulos fiscais, tabelas dinâmicas de preços e controle de usuários.</li>
+                <li data-i18n="exp.job2.b4">Participação no desenvolvimento de painel interno de suporte para gerenciamento de clientes, suas integrações, APIs e ambientes em nuvem.</li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="experience-toggle-btn" type="button" aria-expanded="false">
+            <span class="toggle-text" data-i18n="exp.showMore">Ver detalhes</span>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </button>
+        </div>
+
+        <!-- Experiência 3: Vail Resorts (Work and Travel EUA) -->
+        <div class="experience-card reveal delay-3">
+          <div class="experience-top-row">
+            <h3 class="experience-role" data-i18n="exp.job3.role">Retail Assistant - Work and Travel</h3>
+            <span class="experience-period" data-i18n="exp.job3.period">15/12/2023 — 15/03/2024</span>
+          </div>
+          <div class="experience-company" data-i18n="exp.job3.company">Vail Resorts • Stowe, Vermont - Estados Unidos</div>
+
+          <div class="experience-skills">
+            <span class="experience-badge" data-i18n="exp.job3.badge1">Inglês (Avançado)</span>
+            <span class="experience-badge" data-i18n="exp.job3.badge2">Relacionamento com Clientes</span>
+            <span class="experience-badge" data-i18n="exp.job3.badge3">Comunicação</span>
+          </div>
+
+          <div class="experience-details">
+            <div class="experience-details-inner">
+              <ul class="experience-bullets">
+                <li data-i18n="exp.job3.b1">Participação em programa de intercâmbio cultural e profissional em Stowe, Vermont, EUA.</li>
+                <li data-i18n="exp.job3.b2">Desenvolvimento de habilidades avançadas de comunicação em inglês (nível C1), além de relacionamento com clientes e adaptabilidade cultural.</li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="experience-toggle-btn" type="button" aria-expanded="false">
+            <span class="toggle-text" data-i18n="exp.showMore">Ver detalhes</span>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </button>
+        </div>
+
+        <!-- Experiência 4: Voll Jr (Empresa Júnior USP) -->
+        <div class="experience-card reveal delay-1">
+          <div class="experience-top-row">
+            <h3 class="experience-role" data-i18n="exp.job4.role">Membro da Equipe de Marketing (Empresa Júnior USP)</h3>
+            <span class="experience-period" data-i18n="exp.job4.period">01/01/2023 — 31/12/2023</span>
+          </div>
+          <div class="experience-company" data-i18n="exp.job4.company">Voll Jr • Ribeirão Preto, Brasil</div>
+
+          <div class="experience-skills">
+            <span class="experience-badge" data-i18n="exp.job4.badge1">Marketing</span>
+            <span class="experience-badge" data-i18n="exp.job4.badge2">Análise de Redes Sociais</span>
+            <span class="experience-badge" data-i18n="exp.job4.badge3">Comunicação</span>
+          </div>
+
+          <div class="experience-details">
+            <div class="experience-details-inner">
+              <ul class="experience-bullets">
+                <li data-i18n="exp.job4.b1">Criação e gestão de conteúdo digital para os perfis oficiais da empresa no Instagram e LinkedIn.</li>
+                <li data-i18n="exp.job4.b2">Análise de métricas de engajamento e estatísticas de redes sociais para otimizar o alcance de marketing.</li>
+                <li data-i18n="exp.job4.b3">Implementação de estratégias de marketing com foco na prospecção passiva de novos clientes.</li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="experience-toggle-btn" type="button" aria-expanded="false">
+            <span class="toggle-text" data-i18n="exp.showMore">Ver detalhes</span>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: PROJETOS -->
+    <section id="projects" class="reveal">
+      <div class="section-header">
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title" data-i18n="projects.title">Projetos</h2>
+            <p class="section-desc" data-i18n="projects.desc">
+              Alguns dos meus projetos pessoais:
+            </p>
+          </div>
+          <a href="https://github.com/lalamp" target="_blank" class="section-link">
+            GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="projects-list">
+        
+        <!-- Projeto 1: Saturnus -->
+        <article class="project-card reveal delay-1">
+          <a href="https://saturnus-fin.vercel.app/login" target="_blank" class="project-preview-frame" aria-label="Acessar Saturnus Live">
+            <div class="preview-topbar">
+              <div class="preview-dots">
+                <span class="p-dot p-dot-1"></span>
+                <span class="p-dot p-dot-2"></span>
+                <span class="p-dot p-dot-3"></span>
+              </div>
+              <span class="preview-badge">saturnus-fin.vercel.app</span>
+            </div>
+
+            <div class="preview-image-wrapper">
+              <img src="assets/saturnus.png" alt="Interface do sistema financeiro Saturnus" class="preview-image" loading="lazy" />
+              <div class="preview-image-overlay">
+                <span class="preview-overlay-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Sistema</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="project-content">
+            <div>
+              <div class="project-top-action">
+                <a href="https://github.com/lalamp/saturnus" target="_blank" class="project-github-pill" aria-label="Ver Saturnus no GitHub">
+                  <i class="devicon-github-plain"></i>
+                  <span>GitHub</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.65rem;"></i>
+                </a>
+              </div>
+              <h3 class="project-name" data-i18n="projects.p1.title">Saturnus</h3>
+              <p class="project-description" data-i18n="projects.p1.desc">
+                Sistema integrado de gestão e análise financeira empresarial, que permite controlar o balanço patrimonial e DRE. Oferece gerenciamento de demonstrativos, análise de indicadores financeiros e visualização de dados por meio de gráficos. Possibilita ainda o agrupamento de empresas em grupos econômicos e a consolidação de informações, com conciliação e contabilização de transferências intercompany.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-stack">
+                <span class="stack-pill"><i class="devicon-nextjs-plain" style="color: #ffffff;"></i> Next.js</span>
+                <span class="stack-pill"><i class="devicon-fastify-plain" style="color: #ffffff;"></i> Fastify</span>
+                <span class="stack-pill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                <span class="stack-pill"><i class="devicon-docker-plain colored"></i> Docker</span>
+                <span class="stack-pill"><i class="fa-solid fa-arrows-spin" style="color: #f472b6;"></i> CI/CD</span>
+                <span class="stack-pill"><i class="fa-solid fa-play" style="font-size: 0.65rem;"></i> Vercel</span>
+                <span class="stack-pill"><i class="fa-solid fa-server"></i> Render</span>
+                <span class="stack-pill"><i class="fa-solid fa-cloud" style="color: #00e699;"></i> Neon</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2: Portfólio Pessoal -->
+        <article class="project-card reveal delay-2">
+          <a href="#home" class="project-preview-frame" aria-label="Portfólio Web Pessoal (Este site)">
+            <div class="preview-topbar">
+              <div class="preview-dots">
+                <span class="p-dot p-dot-1"></span>
+                <span class="p-dot p-dot-2"></span>
+                <span class="p-dot p-dot-3"></span>
+              </div>
+              <span class="preview-badge" data-i18n="projects.p2.siteBadge">Este site</span>
+            </div>
+
+            <div class="preview-image-wrapper">
+              <img src="assets/portfolio.png" alt="Interface do Portfólio Web Pessoal" class="preview-image" loading="lazy" />
+              <div class="preview-image-overlay">
+                <span class="preview-overlay-btn"><i class="fa-solid fa-arrow-up"></i> Início</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="project-content">
+            <div>
+              <div class="project-top-action">
+                <span class="project-github-pill" style="opacity: 0.65; cursor: default;" title="Repositório em breve">
+                  <i class="devicon-github-plain"></i>
+                  <span>GitHub</span>
+                  <span style="font-size: 0.65rem; opacity: 0.7;">(Em breve)</span>
+                </span>
+              </div>
+              <h3 class="project-name" data-i18n="projects.p2.title">Portfólio Web Pessoal</h3>
+              <p class="project-description" data-i18n="projects.p2.desc">
+                Portfólio web desenvolvido para apresentar minha formação acadêmica, trajetória profissional e projetos práticos.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-stack">
+                <span class="stack-pill"><i class="devicon-html5-plain colored"></i> HTML5</span>
+                <span class="stack-pill"><i class="devicon-css3-plain colored"></i> CSS3</span>
+                <span class="stack-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5: CONTATO -->
+    <section id="contact" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="contact.title">Contato</h2>
+        <p class="section-desc" data-i18n="contact.desc">
+          Sinta-se à vontade para me enviar uma mensagem ou conectar-se através das redes:
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/lampereira" target="_blank" class="contact-card reveal delay-1">
+          <div class="contact-icon-box">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="contact-text-box">
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">in/lampereira</div>
+          </div>
+        </a>
+
+        <!-- E-mail -->
+        <a href="mailto:lamagalhaespereira@gmail.com" class="contact-card reveal delay-2">
+          <div class="contact-icon-box">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-text-box">
+            <div class="contact-label">E-mail</div>
+            <div class="contact-value">lamagalhaespereira@gmail.com</div>
+          </div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5531995621716" target="_blank" class="contact-card reveal delay-3">
+          <div class="contact-icon-box">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-text-box">
+            <div class="contact-label" data-i18n="contact.phone">Telefone / WhatsApp</div>
+            <div class="contact-value">+55 (31) 99562-1716</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 Larissa M. Pereira. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js?v=32"></script>
+</body>
 </html>

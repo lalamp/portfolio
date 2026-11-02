@@ -1,0 +1,10 @@
+# Agent skills & cache
+.agent/
+
+# Design drafts & internal docs
+design/
+documentacao/
+
+# OS files
+.DS_Store
+Thumbs.db
