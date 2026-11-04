@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contato",
 
       "hero.greeting": "Olá, sou",
-      "hero.bio": "Desenvolvedora full stack com sólida vivência em Flutter, React e Go, construindo tanto sistemas web quanto aplicativos mobile. Tenho forte interesse na construção de soluções completas, unindo interfaces atraentes com foco em UI/UX e backends eficientes e de alta performance. Integro ferramentas de IA no dia a dia para otimizar meu fluxo de trabalho e me adapto com facilidade a novas linguagens e stacks tecnológicas.",
+      "hero.bio": "Desenvolvedora de software full stack com experiência profissional atuando em aplicações web e mobile. Experiência no desenvolvimento de aplicações escaláveis e com diferentes tecnologias, com forte interesse na construção de soluções de alta performance e foco na experiência do usuário. Estou sempre em busca de expandir meus conhecimentos, explorar novas tecnologias e aprimorar práticas de desenvolvimento de software.",
       "hero.credentials": "Formada em Ciência da Computação pela Universidade de São Paulo (USP), sou fluente em inglês e sigo aprimorando meu espanhol.",
       "hero.resume": "Currículo (PDF)",
       "hero.contact": "Contato",
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contact",
 
       "hero.greeting": "Hi, I'm",
-      "hero.bio": "Full stack developer with solid experience in Flutter, React, and Go, building both web systems and mobile applications. I have a strong interest in creating complete solutions, uniting attractive interfaces focused on UI/UX and efficient, performant backends. I integrate AI-powered tools into my daily workflow to optimize my workflow and easily adapt to new languages and technology stacks.",
+      "hero.bio": "Full-stack software developer with professional experience working across web and mobile applications. Experienced in developing scalable applications and working with different technologies, with a strong interest in building high-performance solutions and delivering great user experiences. I am always looking to expand my knowledge, explore new technologies, and improve software development practices.",
       "hero.credentials": "Graduated in Computer Science from the University of São Paulo (USP), fluent in English, and continually improving my Spanish.",
       "hero.resume": "Resume (PDF)",
       "hero.contact": "Get in touch",
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contacto",
 
       "hero.greeting": "Hola, soy",
-      "hero.bio": "Desarrolladora full stack con sólida experiencia en Flutter, React y Go, construyendo tanto sistemas web como aplicaciones móviles. Tengo un gran interés en la creación de soluciones completas, uniendo interfaces atractivas con foco en UI/UX y backends eficientes y de alto rendimiento. Integro herramientas de IA en el día a día para optimizar mi flujo de trabajo y me adapto con facilidad a nuevos lenguajes y stacks tecnológicos.",
+      "hero.bio": "Desarrolladora de software full stack con experiencia profesional en aplicaciones web y móviles. Experiencia en el desarrollo de aplicaciones escalables y con diferentes tecnologías, con gran interés en la construcción de soluciones de alto rendimiento y en ofrecer excelentes experiencias de usuario. Siempre busco expandir mis conocimientos, explorar nuevas tecnologías y mejorar las prácticas de desarrollo de software.",
       "hero.credentials": "Graduada en Ciencias de la Computación por la Universidad de São Paulo (USP), soy fluente en inglés y sigo mejorando mi español.",
       "hero.resume": "Currículum (PDF)",
       "hero.contact": "Contacto",
