@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contato",
 
       "hero.greeting": "Olá, sou",
-      "hero.bio": "Desenvolvedora de software full stack com experiência profissional atuando em aplicações web e mobile. Experiência no desenvolvimento de aplicações escaláveis e com diferentes tecnologias, com forte interesse na construção de soluções de alta performance e foco na experiência do usuário. Estou sempre em busca de expandir meus conhecimentos, explorar novas tecnologias e aprimorar práticas de desenvolvimento de software.",
+      "hero.bio": "Desenvolvedora de software full stack com experiência profissional no desenvolvimento de aplicações web e mobile, utilizando diferentes linguagens e tecnologias. Atuo na construção de soluções de alta performance, com foco na experiência do usuário e abrangendo todo o ciclo de desenvolvimento, desde a criação de interfaces até a entrega das aplicações em produção.",
       "hero.credentials": "Formada em Ciência da Computação pela Universidade de São Paulo (USP), sou fluente em inglês e sigo aprimorando meu espanhol.",
       "hero.resume": "Currículo (PDF)",
       "hero.contact": "Contato",
@@ -92,27 +92,27 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job1.period": "fev 2026 — Presente",
       "exp.job1.role": "Desenvolvedora de Software Júnior",
       "exp.job1.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
-      "exp.job1.b1": "Desenvolvimento de um framework de UI e biblioteca de componentes interno em Flutter para padronizar o desenvolvimento frontend e reduzir retrabalho em múltiplos apps, construindo desde formulários e datagrids CRUD básicos até interfaces mestre-detalhe complexas.",
-      "exp.job1.b2": "Construção de um sistema web de controle de produção para clientes do varejo utilizando React, Go e MySQL, gerenciando fluxos de receitas, preparação, embalagem, transferências de estoque e controle de inventário.",
-      "exp.job1.b3": "Manutenção e expansão de aplicativos mobile existentes (Android/iOS) em Flutter/Go e sistemas ERP de varejo na web em React/Go, solucionando chamados de suporte, corrigindo bugs e implementando novas funcionalidades.",
-      "exp.job1.b4": "Gestão de pipelines de CI/CD e deploys de aplicações em diversos ambientes utilizando CircleCI, Codemagic, Firebase, Nomad, Apple App Store e Google Play Store.",
-      "exp.job1.b5": "Integração de ferramentas com IA no fluxo diário de trabalho para acelerar a geração de código, auxiliar no debugging e refatoração e otimizar a eficiência geral de desenvolvimento.",
+      "exp.job1.b1": "Desenvolvi uma biblioteca interna de componentes em Flutter para padronizar o desenvolvimento frontend e reduzir retrabalho entre diferentes aplicações da empresa, abrangendo desde componentes básicos, como formulários e datagrids CRUD, até interfaces complexas no modelo mestre-detalhe.",
+      "exp.job1.b2": "Desenvolvo um sistema web de controle de produção para clientes do varejo utilizando React, Go e MySQL, contemplando o gerenciamento de fluxos de receitas, preparação, embalagem, transferências de estoque e controle de inventário.",
+      "exp.job1.b3": "Mantenho e evoluo aplicações mobile (Android/iOS) desenvolvidas com Flutter e Go, além de um sistema ERP de varejo para web desenvolvido com React e Go, incluindo atendimento a chamados de suporte, correção de bugs e implementação de novas funcionalidades.",
+      "exp.job1.b4": "Gerencio pipelines de CI/CD e processos de deploy em diferentes ambientes, utilizando CircleCI, Codemagic, Firebase, Nomad, Apple App Store e Google Play Store.",
+      "exp.job1.b5": "Integro ferramentas de inteligência artificial ao fluxo diário de desenvolvimento para acelerar a geração de código, auxiliar em atividades de debugging e refatoração e aumentar a eficiência do processo de desenvolvimento.",
 
       // Experiência 2
       "exp.job2.period": "out 2024 — jan 2026",
       "exp.job2.role": "Estagiária em Desenvolvimento de Software",
       "exp.job2.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
-      "exp.job2.b1": "Desenvolvimento full-stack de aplicações web e mobile utilizando Flutter, Go e MySQL.",
-      "exp.job2.b2": "Desenvolvimento e otimização de novas APIs e endpoints, além da migração e refatoração de sistemas backend de Java para Go.",
-      "exp.job2.b3": "Contribuição no desenvolvimento de módulos centrais para sistema ERP de varejo, incluindo controle de estoque, processamento de pedidos, módulos fiscais, tabelas dinâmicas de preços e controle de usuários.",
-      "exp.job2.b4": "Participação no desenvolvimento de painel interno de suporte para gerenciamento de clientes, suas integrações, APIs e ambientes em nuvem.",
+      "exp.job2.b1": "Desenvolvi aplicações full stack web e mobile utilizando Flutter, Dart, Go e MySQL.",
+      "exp.job2.b2": "Desenvolvi e otimizei APIs, além de atuar na migração e refatoração de serviços backend de Java para Go.",
+      "exp.job2.b3": "Desenvolvi módulos essenciais de um sistema ERP para o varejo, incluindo gestão de estoque, processamento de pedidos, funcionalidades fiscais, tabelas dinâmicas de preços e gerenciamento de usuários.",
+      "exp.job2.b4": "Desenvolvi um painel interno de suporte para gerenciamento de clientes da empresa e administração de suas integrações, APIs e ambientes em nuvem.",
 
       // Experiência 3
       "exp.job3.period": "dez 2023 — mar 2024",
       "exp.job3.role": "Retail Assistant - Work and Travel",
       "exp.job3.company": "Vail Resorts • Stowe, Vermont - Estados Unidos",
-      "exp.job3.b1": "Participação em programa de intercâmbio cultural e profissional em Stowe, Vermont, EUA.",
-      "exp.job3.b2": "Desenvolvimento de habilidades avançadas de comunicação em inglês (nível C1), além de relacionamento com clientes e adaptabilidade cultural.",
+      "exp.job3.b1": "Participei de programa de intercâmbio cultural e profissional em Stowe, Vermont, EUA.",
+      "exp.job3.b2": "Desenvolvi habilidades avançadas de comunicação em inglês (nível C1), além de relacionamento com clientes e adaptabilidade cultural.",
       "exp.job3.badge1": "Inglês (Avançado)",
       "exp.job3.badge2": "Relacionamento com Clientes",
       "exp.job3.badge3": "Comunicação",
@@ -121,9 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job4.period": "jan 2023 — dez 2023",
       "exp.job4.role": "Membro da Equipe de Marketing (Empresa Júnior USP)",
       "exp.job4.company": "Voll Jr • Ribeirão Preto, Brasil",
-      "exp.job4.b1": "Criação e gestão de conteúdo digital para os perfis oficiais da empresa no Instagram e LinkedIn.",
-      "exp.job4.b2": "Análise de métricas de engajamento e estatísticas de redes sociais para otimizar o alcance de marketing.",
-      "exp.job4.b3": "Implementação de estratégias de marketing com foco na prospecção passiva de novos clientes.",
+      "exp.job4.b1": "Criei e gerenciei conteúdo digital para os perfis oficiais da empresa no Instagram e LinkedIn.",
+      "exp.job4.b2": "Analisei métricas de engajamento e estatísticas de redes sociais para otimizar o alcance de marketing.",
+      "exp.job4.b3": "Implementei estratégias de marketing com foco na prospecção passiva de novos clientes.",
       "exp.job4.badge1": "Marketing",
       "exp.job4.badge2": "Análise de Redes Sociais",
       "exp.job4.badge3": "Comunicação",
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contact",
 
       "hero.greeting": "Hi, I'm",
-      "hero.bio": "Full-stack software developer with professional experience working across web and mobile applications. Experienced in developing scalable applications and working with different technologies, with a strong interest in building high-performance solutions and delivering great user experiences. I am always looking to expand my knowledge, explore new technologies, and improve software development practices.",
+      "hero.bio": "Full-stack software developer with professional experience developing web and mobile applications using different programming languages and technologies. I focus on building high-performance solutions centered on user experience, covering the complete development lifecycle, from interface design to delivering applications into production.",
       "hero.credentials": "Graduated in Computer Science from the University of São Paulo (USP), fluent in English, and continually improving my Spanish.",
       "hero.resume": "Resume (PDF)",
       "hero.contact": "Get in touch",
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "projects.title": "Projects",
       "projects.desc": "Some of my personal projects:",
       "projects.p1.title": "Saturnus",
-      "projects.p1.desc": "Integrated corporate financial management and analysis system to control balance sheets and income statements (P&L/DRE). Features statement management, financial indicator analysis, and chart visualization. Enables grouping companies into economic groups and consolidating data with intercompany transfer reconciliation and accounting.",
+      "projects.p1.desc": "Integrated corporate financial management and analysis system to control balance sheets and income statements. Features statement management, financial indicator analysis, and chart visualization. Enables grouping companies into economic groups and consolidating data with intercompany transfer reconciliation and accounting.",
 
       "projects.p2.siteBadge": "This website",
       "projects.p2.title": "Personal Web Portfolio",
@@ -182,20 +182,20 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job1.period": "Feb 2026 — Present",
       "exp.job1.role": "Junior Software Developer",
       "exp.job1.company": "Hipcom ERP • São Paulo, Brazil (Remote)",
-      "exp.job1.b1": "Developed an internal UI framework and component library in Flutter to standardize frontend development and reduce rework across multiple apps, building from basic CRUD forms and datagrids to complex master-detail interfaces.",
-      "exp.job1.b2": "Build a web-based production control system for retail clients using React, Go, and MySQL, managing workflows for recipes, preparation, packaging, stock transfers, and inventory control.",
-      "exp.job1.b3": "Maintain and expand existing mobile apps (Android/iOS) in Flutter/Go and web systems in React/Go for a retail ERP system, resolving support tickets, fixing bugs, and implementing new features.",
-      "exp.job1.b4": "Manage CI/CD pipelines and application deployments across various environments utilizing CircleCI, Codemagic, Firebase, Nomad, Apple App Store, and Google Play Store.",
-      "exp.job1.b5": "Integrate AI-powered tools into the daily workflow to accelerate code generation, assist with debugging and refactoring, and optimize overall development efficiency.",
+      "exp.job1.b1": "Developed an internal Flutter component library to standardize frontend development and reduce duplicated work across the company's applications, covering everything from basic components, such as forms and CRUD data grids, to complex master-detail interfaces.",
+      "exp.job1.b2": "Develop a web-based production management system for retail clients using React, Go, and MySQL, covering workflows for recipes, preparation, packaging, stock transfers, and inventory management.",
+      "exp.job1.b3": "Maintain and enhance mobile applications (Android/iOS) built with Flutter and Go, as well as a web-based retail ERP system developed with React and Go, including handling support requests, fixing bugs, and implementing new features.",
+      "exp.job1.b4": "Manage CI/CD pipelines and deployment processes across different environments using CircleCI, Codemagic, Firebase, Nomad, Apple App Store, and Google Play Store.",
+      "exp.job1.b5": "Integrate AI tools into the daily development workflow to accelerate code generation, assist with debugging and refactoring, and improve overall development efficiency.",
 
       // Experience 2 (verbatim from CV)
       "exp.job2.period": "Oct 2024 — Jan 2026",
       "exp.job2.role": "Software Development Intern",
       "exp.job2.company": "Hipcom ERP • São Paulo, Brazil (Remote)",
-      "exp.job2.b1": "Developed full-stack web and mobile applications using Flutter, Go and MySQL.",
-      "exp.job2.b2": "Developed and optimized new APIs and endpoints, in addition to migrating and refactoring backend systems from Java to Go.",
-      "exp.job2.b3": "Contributed to the development of core modules for a retail ERP system, including inventory management, order processing, fiscal modules, dynamic pricing tables and user control.",
-      "exp.job2.b4": "Participated in developing an internal support panel to manage client integrations, APIs and cloud environments.",
+      "exp.job2.b1": "Developed full-stack web and mobile applications using Flutter, Dart, Go, and MySQL.",
+      "exp.job2.b2": "Developed and optimized APIs, as well as migrated and refactored backend services from Java to Go.",
+      "exp.job2.b3": "Developed key modules for a retail ERP system, including inventory management, order processing, tax-related features, dynamic pricing tables, and user management.",
+      "exp.job2.b4": "Developed an internal support system for managing company clients and overseeing their integrations, APIs, and cloud environments.",
 
       // Experience 3 (verbatim from CV)
       "exp.job3.period": "Dec 2023 — Mar 2024",
@@ -234,8 +234,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contacto",
 
       "hero.greeting": "Hola, soy",
-      "hero.bio": "Desarrolladora de software full stack con experiencia profesional en aplicaciones web y móviles. Experiencia en el desarrollo de aplicaciones escalables y con diferentes tecnologías, con gran interés en la construcción de soluciones de alto rendimiento y en ofrecer excelentes experiencias de usuario. Siempre busco expandir mis conocimientos, explorar nuevas tecnologías y mejorar las prácticas de desarrollo de software.",
-      "hero.credentials": "Graduada en Ciencias de la Computación por la Universidad de São Paulo (USP), soy fluente en inglés y sigo mejorando mi español.",
+      "hero.bio": "Desarrolladora de software full stack con experiencia profesional en el desarrollo de aplicaciones web y móviles, utilizando diversos lenguajes y tecnologías. Me enfoco en la construcción de soluciones de alto rendimiento centradas en la experiencia del usuario, abarcando todo el ciclo de desarrollo, desde la creación de interfaces hasta el despliegue de las aplicaciones en producción.",
+      "hero.credentials": "Graduada en Ciencias de la Computación por la Universidad de São Paulo (USP), con inglés fluido y sigo mejorando mi español.",
       "hero.resume": "Currículum (PDF)",
       "hero.contact": "Contacto",
 
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "projects.title": "Proyectos",
       "projects.desc": "Algunos de mis proyectos personales:",
       "projects.p1.title": "Saturnus",
-      "projects.p1.desc": "Sistema integrado de gestión y análisis financiero empresarial para el control de balance patrimonial y estado de resultados (DRE). Ofrece gestión de estados contables, análisis de indicadores y gráficos interactivos, agrupamiento de empresas en grupos económicos y consolidación de datos con conciliación y contabilización de transferencias intercompany.",
+      "projects.p1.desc": "Sistema integrado de gestión y análisis financiero empresarial para el control de balance patrimonial y estado de resultados. Ofrece gestión de estados contables, análisis de indicadores y gráficos interactivos, agrupamiento de empresas en grupos económicos y consolidación de datos con conciliación y contabilización de transferencias intercompany.",
 
       "projects.p2.siteBadge": "Este sitio",
       "projects.p2.title": "Portafolio Web Personal",
@@ -272,27 +272,27 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job1.period": "feb 2026 — Presente",
       "exp.job1.role": "Desarrolladora de Software Junior",
       "exp.job1.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
-      "exp.job1.b1": "Desarrollo de framework interno de UI y librería de componentes en Flutter para estandarizar el frontend en múltiples aplicaciones.",
-      "exp.job1.b2": "Construcción de sistema web de control de producción para retail con React, Go y MySQL.",
-      "exp.job1.b3": "Mantenimiento y expansión de apps móviles (Flutter/Go) y web (React/Go), resolución de tickets y nuevas funcionalidades.",
-      "exp.job1.b4": "Gestión de pipelines de CI/CD y despliegues en CircleCI, Codemagic, Firebase, Nomad, App Store y Google Play.",
-      "exp.job1.b5": "Integración de herramientas de IA en el flujo diario para optimizar generación de código, debugging y refactorización.",
+      "exp.job1.b1": "Desarrollé una librería interna de componentes en Flutter para estandarizar el desarrollo frontend y reducir el retrabajo entre diferentes aplicaciones de la empresa, abarcando desde componentes básicos, como formularios y datagrids CRUD, hasta interfaces complejas en el modelo maestro-detalle.",
+      "exp.job1.b2": "Desarrollo un sistema web de control de producción para clientes de retail utilizando React, Go y MySQL, que contempla la gestión de flujos de recetas, preparación, empaque, transferencias de stock y control de inventario.",
+      "exp.job1.b3": "Mantengo y evoluciono aplicaciones móviles (Android/iOS) desarrolladas con Flutter y Go, además de un sistema ERP de retail para web desarrollado con React y Go, incluyendo atención a tickets de soporte, corrección de bugs e implementación de nuevas funcionalidades.",
+      "exp.job1.b4": "Gestiono pipelines de CI/CD y procesos de despliegue en diferentes entornos, utilizando CircleCI, Codemagic, Firebase, Nomad, Apple App Store y Google Play Store.",
+      "exp.job1.b5": "Integro herramientas de inteligencia artificial en el flujo diario de desarrollo para acelerar la generación de código, asistir en actividades de depuración y refactorización y aumentar la eficiencia del proceso de desarrollo.",
 
       // Experiencia 2
       "exp.job2.period": "oct 2024 — ene 2026",
       "exp.job2.role": "Practicante en Desarrollo de Software",
       "exp.job2.company": "Hipcom ERP • São Paulo, Brasil (remoto)",
-      "exp.job2.b1": "Desarrollo full-stack de aplicaciones web y móviles utilizando Flutter, Go y MySQL.",
-      "exp.job2.b2": "Desarrollo y optimización de nuevas APIs y endpoints, migrando servicios backend de Java a Go.",
-      "exp.job2.b3": "Desarrollo de módulos centrales de ERP: inventario, pedidos, módulos fiscales y tablas de precios.",
-      "exp.job2.b4": "Participación en panel interno de soporte para gestión de integraciones y entornos en la nube.",
+      "exp.job2.b1": "Desarrollé aplicaciones full stack web y móviles utilizando Flutter, Dart, Go y MySQL.",
+      "exp.job2.b2": "Desarrollé y optimicé APIs, así como migré y refactoricé servicios backend de Java a Go.",
+      "exp.job2.b3": "Desarrollé módulos esenciales de un sistema ERP para retail, incluyendo gestión de inventario, procesamiento de pedidos, funcionalidades fiscales, tablas dinámicas de precios y administración de usuarios.",
+      "exp.job2.b4": "Desarrollé un panel interno de soporte para la gestión de clientes de la empresa y la administración de sus integraciones, APIs y entornos en la nube.",
 
       // Experiencia 3
       "exp.job3.period": "dic 2023 — mar 2024",
       "exp.job3.role": "Retail Assistant - Work and Travel",
       "exp.job3.company": "Vail Resorts • Stowe, Vermont - Estados Unidos",
-      "exp.job3.b1": "Programa de intercambio cultural y profesional en Stowe, Vermont, EE. UU.",
-      "exp.job3.b2": "Desarrollo de habilidades avanzadas de comunicación en inglés (C1) y atención al cliente.",
+      "exp.job3.b1": "Participé en un programa de intercambio cultural y profesional en Stowe, Vermont, EE. UU.",
+      "exp.job3.b2": "Desarrollé habilidades avanzadas de comunicación en inglés (nivel C1), relaciones con clientes y adaptabilidad cultural.",
       "exp.job3.badge1": "Inglés (Avanzado)",
       "exp.job3.badge2": "Relaciones con Clientes",
       "exp.job3.badge3": "Comunicación",
@@ -301,9 +301,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "exp.job4.period": "ene 2023 — dic 2023",
       "exp.job4.role": "Miembro del Equipo de Marketing (Empresa Junior USP)",
       "exp.job4.company": "Voll Jr • Ribeirão Preto, Brasil",
-      "exp.job4.b1": "Creación y gestión de contenidos digitales para perfiles oficiales de Instagram y LinkedIn.",
-      "exp.job4.b2": "Análisis de métricas de redes sociales y estrategias de marketing.",
-      "exp.job4.b3": "Prospección pasiva de novos clientes a través de marketing de contenidos.",
+      "exp.job4.b1": "Creé y gestioné contenido digital para los perfiles oficiales de la empresa en Instagram y LinkedIn.",
+      "exp.job4.b2": "Analicé métricas de interacción y estadísticas de redes sociales para optimizar el alcance de marketing.",
+      "exp.job4.b3": "Implementé estrategias de marketing con enfoque en la prospección pasiva de nuevos clientes.",
       "exp.job4.badge1": "Marketing",
       "exp.job4.badge2": "Analítica de Redes Sociales",
       "exp.job4.badge3": "Comunicación",
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact.desc": "Puedes enviarme un mensaje o conectar a través de mis redes:",
       "contact.phone": "Teléfono / WhatsApp",
 
-      "footer.rights": "Todos os direitos reservados."
+      "footer.rights": "Todos los derechos reservados."
     }
   };
 
@@ -344,6 +344,13 @@ document.addEventListener('DOMContentLoaded', () => {
           : translations[lang]["exp.showMore"];
       }
     });
+
+    // Atualiza o arquivo de currículo de acordo com o idioma
+    const resumeLink = document.getElementById('hero-resume-link');
+    if (resumeLink) {
+      const resumeFile = lang === 'pt' ? 'docs/curriculo_pt.pdf?v=4' : 'docs/curriculo_en.pdf?v=4';
+      resumeLink.setAttribute('href', resumeFile);
+    }
 
     langButtons.forEach(btn => {
       if (btn.getAttribute('data-lang') === lang) {
